@@ -3,6 +3,7 @@ package br.senai.sc.revision.controller;
 import br.senai.sc.revision.model.dto.UsuarioDTO;
 import br.senai.sc.revision.model.entity.Usuario;
 import br.senai.sc.revision.service.UsuarioService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,7 @@ import java.util.Optional;
 
 @RequestMapping("/usuario")
 @Controller
+@AllArgsConstructor
 public class UsuarioController {
     private UsuarioService usuarioService;
 
